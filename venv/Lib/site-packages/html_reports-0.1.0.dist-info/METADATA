@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: html-reports
+Version: 0.1.0
+Summary: Module to create static html reports
+Home-page: https://github.com/villoro/html-reports
+Author: Arnau Villoro
+Author-email: arnau@villoro.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: jinja2
+Requires-Dist: markdown
+Requires-Dist: easydev
+
+# HTML Reports
+
+Module for creating html reports based on jinja2 templates.
+
+## Usage
+
+First you should create a report. Then you can add content to it. When you have all the content you can render it in a file with the `write_report` function.
+
+For example:
+
+```python
+from reports import Report
+
+report = Report()
+
+rep.add_title("title1")
+rep.add_title("title1.1", level=2)
+rep.add_markdown("Some text")
+
+rep.write_report()
+```
+
+This will create the `report.html` file using the `templates/simple.html` template.
+
+## Installation
+
+	pip install -r requirements.txt
+
+## Authors
+* [Arnau Villoro](https://villoro.com)
+
+## License
+The content of this repository is licensed under a [MIT](https://opensource.org/licenses/MIT).
+
+## Nomenclature
+Branches and commits use some prefixes to keep everything better organized.
+
+### Branches
+* **f/:** features
+* **r/:** releases
+* **h/:** hotfixs
+
+### Commits
+* **[NEW]** new features
+* **[FIX]** fixes
+* **[REF]** refactors
+* **[PYL]** [pylint](https://www.pylint.org/) improvements
+* **[TST]** tests
+
+
