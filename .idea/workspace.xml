@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a474a53c-562c-4ed7-b30a-63a024159eae" name="Default Changelist" comment="" />
+    <list default="true" id="a474a53c-562c-4ed7-b30a-63a024159eae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_1SonimSetupWizard.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_1SonimSetupWizard.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +24,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -145,6 +147,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/Scout/dummy.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
@@ -160,6 +163,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_2SonimSafeGuardMainScreenUI.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
@@ -175,20 +179,21 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_SonimSetupWizard" />
       <item itemvalue="Python.dummy (1)" />
       <item itemvalue="Python.dummy" />
+      <item itemvalue="Python.test_1SonimSetupWizard" />
       <item itemvalue="Python.test_2SonimSafeGuardMainScreenUI" />
+      <item itemvalue="Python.test_SonimSetupWizard" />
       <item itemvalue="Python tests.pytest in dummy.py" />
       <item itemvalue="Python tests.pytest in test_2SonimSafeGuardMainScreenUI.py" />
       <item itemvalue="Python tests.pytest in tests" />
-      <item itemvalue="Python.test_1SonimSetupWizard" />
     </list>
     <recent_temporary>
       <list>
@@ -211,6 +216,9 @@
       <updated>1598518631515</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600171592461">
