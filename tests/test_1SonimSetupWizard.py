@@ -1,32 +1,30 @@
-import pytest
-
-from PageObjects.SonimScoutSetup import SonimScoutSetup
+import time
 from utilities.BaseClass import BaseClass
 
 
-class TestScout(BaseClass):
-    def test_SonimSetupWizard(self):
-        Wizard = SonimScoutSetup(self.driver1)
-        SetupWizardString = Wizard.ScoutSetup().text
-        print(SetupWizardString)
-        assert SetupWizardString == "Sonim Setup Wizard", "String mismatch"
+class Test_SONIM_SetupWizard(BaseClass):
+    # PageTitle
+    def test_PageTitle(self):
+        # launch Sonim Setuo Wizard
+        self.driver1.find_element_by_xpath("//*[@text='Sonim Setup Wizard']").click()
+        PageTitle = self.driver1.find_element_by_id(
+            "com.sonimtech.setupwizard.ten:id/action_bar").find_element_by_xpath(
+            "//*[@class='android.widget.TextView']").text
+        print(PageTitle)
+        time.sleep(2)
 
-    def test_SonimSetupWizardPageHeading(self):
-        Wizard = SonimScoutSetup(self.driver1)
-        if SetupWizardString == "Sonim Setup Wizard":
-            Wizard.ScoutSetup().click()
-            self.verifyElementPresence("//android.widget.TextView[@text='SonimSetupWizard']")
-            WizardHeading = Wizard.find_element_by_xpath("//android.widget.TextView[@text='SonimSetupWizard']").text
-            assert WizardHeading == "Sonim Setup Wizard", "String Mismatch"
+    # txtViewInformation
+    def test_txtViewInformation(self):
+        txtViewInformation = self.driver1.find_element_by_id("com.sonimtech.setupwizard.ten:id/txtViewInformation").text
+        print(txtViewInformation)
+        time.sleep(2)
 
-    def test_SonimSetupWizardScan(self):
-        Wizard = SonimScoutSetup(self.driver1)
-        # Wizard.find_element_by_id("com.sonimtech.setupwizard.ten:id/btnScan").click()
-        # self.verifyElementPresence("//android.widget.Button[@text='SCAN']")
-        Wizard.find_element_by_xpath("//android.widget.Button[@text='SCAN']").text
-        Wizard.find_element_by_xpath("//android.widget.Button[@text='SCAN']").click()
-        Wizard.Quit().click()
+    # SCAN button
+    def test_SCANbutton(self):
+        self.driver1.find_element_by_id("com.sonimtech.setupwizard.ten:id/btnScan").click()
+        self.driver1.keyevent(4)
+        time.sleep(2)
 
-
-        #self.driver.find_element_by_xpath("//*[@text='Sonim Setup Wizard']").click()
-        #self.driver.find_element_by_id("com.sonimtech.setupwizard.ten:id/btnQuit").click()
+    # HOME button
+    def test_HOMEbutton(self):
+        self.driver1.find_element_by_id("com.sonimtech.setupwizard.ten:id/btnQuit").click()
