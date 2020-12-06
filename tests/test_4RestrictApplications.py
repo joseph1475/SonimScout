@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 '''Whatsapp should be installed in the device'''
 
 
-class TestScout(BaseClass):
+class TestSafeGuard(BaseClass):
 
     '''def test_ListofApplications(self):
         self.driver1.find_element_by_xpath("//*[@text='SafeGuard']").click()
@@ -124,6 +124,8 @@ class TestScout(BaseClass):
     def test_wrongpin(self):
         self.driver1.find_element_by_class_name("android.widget.Switch").click()
         self.driver1.find_element_by_class_name("android.widget.EditText").send_keys(4321)
-        self.driver1.find_element_by_xpath("//*[@text ='Enter PIN here']").click()
-        wrongpin_text =self.driver1.find_element_by_xpath("//*[@text ='Input PIN]").text
-        assert wrongpin_text == "Input PIN"
+        self.driver1.find_element_by_xpath("//*[@text ='OK']").click()
+        inputpin = self.driver1.find_element_by_xpath("//*[@text ='Input PIN']").text
+        if inputpin != "Input PIN":
+            print("Success")
+        assert inputpin == "Input PIN"
