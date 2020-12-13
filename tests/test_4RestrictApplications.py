@@ -25,6 +25,7 @@ class TestSafeGuard(BaseClass):
             print(AppsName)'''
 
     def test_CancelOption(self):
+        self.verifyElementPresence("Sonim Scout")
         self.driver1.find_element_by_xpath("//android.widget.TextView[@text='SafeGuard']").click()
         self.driver1.find_element_by_class_name("android.widget.Switch").click()
         self.driver1.find_element_by_class_name("android.widget.EditText").send_keys(1234)
@@ -129,3 +130,7 @@ class TestSafeGuard(BaseClass):
         if inputpin != "Input PIN":
             print("Success")
         assert inputpin == "Input PIN"
+
+        self.driver1.find_element_by_class_name("android.widget.Switch").click()
+        self.driver1.find_element_by_class_name("android.widget.EditText").send_keys(1234)
+        self.driver1.find_element_by_xpath("//*[@text ='OK']").click()

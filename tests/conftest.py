@@ -11,7 +11,7 @@ def setup(request):
         "automationName": "UiAutomator2",
         "platformName": "Android",
         "platformVersion": "",
-        "deviceName": "67a9c223",
+        "deviceName": "903890ef",
         "appPackage": "com.sonim.scout",
         "appActivity": "com.sonim.scout.activities.MainActivity"
 

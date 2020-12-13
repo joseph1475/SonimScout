@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a474a53c-562c-4ed7-b30a-63a024159eae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SonimScout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SonimScout.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scout/Minu_dummy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scout/Minu_dummy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1SonimSetupWizard.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_1SonimSetupWizard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_4RestrictApplications.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/est_4RestrictApplications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_5RestrictFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_5RestrictFeatures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/BaseClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/BaseClass.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +51,52 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GoogleSearch" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PythonIntrnetFramework" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="Python tests.pytest in tests">
+    <configuration name="Camera" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SonimScout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/Camera.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SonimScout" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SonimScout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\minu.j\PycharmProjects\Scout\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dummy (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SonimScout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,7 +139,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_1SonimSetupWizard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="est_1SonimSetupWizard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SonimScout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,28 +151,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_1SonimSetupWizard.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_2SonimSafeGuardMainScreenUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SonimScout" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\joseph.p\PycharmProjects\SonimScout\tests\test_2SonimSafeGuardMainScreenUI.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\minu.j\PycharmProjects\SonimScout\tests\est_1SonimSetupWizard.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,6 +181,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in SonimScout" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="SonimScout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\minu.j\PycharmProjects\PythonSelfFramework\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in dummy.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="SonimScout" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,7 +213,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_2SonimSafeGuardMainScreenUI.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+    <configuration name="pytest in est_2SonimSafeGuardMainScreenUI.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="SonimScout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,7 +225,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_2SonimSafeGuardMainScreenUI.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/est_2SonimSafeGuardMainScreenUI.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -174,9 +233,25 @@
       <module name="SonimScout" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\joseph.p\PycharmProjects\SonimScout\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in tests" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="SonimScout" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
@@ -187,21 +262,23 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.test_SonimSetupWizard" />
+      <item itemvalue="Python.Camera" />
+      <item itemvalue="Python.SonimScout" />
       <item itemvalue="Python.dummy (1)" />
       <item itemvalue="Python.dummy" />
-      <item itemvalue="Python.test_1SonimSetupWizard" />
-      <item itemvalue="Python.test_2SonimSafeGuardMainScreenUI" />
-      <item itemvalue="Python.test_SonimSetupWizard" />
+      <item itemvalue="Python.est_1SonimSetupWizard" />
+      <item itemvalue="Python tests.pytest in SonimScout" />
       <item itemvalue="Python tests.pytest in dummy.py" />
-      <item itemvalue="Python tests.pytest in test_2SonimSafeGuardMainScreenUI.py" />
+      <item itemvalue="Python tests.pytest in est_2SonimSafeGuardMainScreenUI.py" />
       <item itemvalue="Python tests.pytest in tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_1SonimSetupWizard" />
+        <item itemvalue="Python.Camera" />
+        <item itemvalue="Python.SonimScout" />
         <item itemvalue="Python.dummy (1)" />
         <item itemvalue="Python.dummy" />
-        <item itemvalue="Python.test_2SonimSafeGuardMainScreenUI" />
       </list>
     </recent_temporary>
   </component>
@@ -219,40 +296,65 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600171592461">
+    <state x="392" y="0" key="#Minu_dummy" timestamp="1606232438516">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600171592461" />
-    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1605606922851">
+    <state x="392" y="0" key="#Minu_dummy/0.0.1366.728@0.0.1366.728" timestamp="1606232438516" />
+    <state x="-17" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606710389993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605606922851" />
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1605602459491">
+    <state x="-17" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606710389993" />
+    <state x="411" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607268325458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605602459491" />
-    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1605602459489">
+    <state x="411" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607268325458" />
+    <state x="398" y="0" key="#pytest_in_SonimScout" timestamp="1606566985225">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605602459489" />
-    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1605602459489">
+    <state x="398" y="0" key="#pytest_in_SonimScout/0.0.1366.728@0.0.1366.728" timestamp="1606566985225" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1607663605468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605602459489" />
-    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1605602459489">
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607663605468" />
+    <state width="1345" height="307" key="GridCell.Tab.0.bottom" timestamp="1607880907018">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605602459489" />
-    <state x="186" y="9" key="SettingsEditor" timestamp="1605619562277">
+    <state width="1345" height="307" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607880907018" />
+    <state width="1345" height="307" key="GridCell.Tab.0.center" timestamp="1607880907018">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1605619562277" />
+    <state width="1345" height="307" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607880907018" />
+    <state width="1345" height="307" key="GridCell.Tab.0.left" timestamp="1607880907018">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="307" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607880907018" />
+    <state width="1345" height="307" key="GridCell.Tab.0.right" timestamp="1607880907018">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="307" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607880907018" />
+    <state x="186" y="9" key="SettingsEditor" timestamp="1606710128575">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606710128575" />
     <state x="390" y="0" width="586" height="728" key="find.popup" timestamp="1599644656265">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="586" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599644656265" />
+    <state x="351" y="49" key="search.everywhere.popup" timestamp="1606584821053">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="351" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606584821053" />
   </component>
 </project>
