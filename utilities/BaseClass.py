@@ -8,7 +8,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 @pytest.mark.usefixtures("setup")
 class BaseClass:
     def verifyLinkPresence(self,elementtext):
-        wait = WebDriverWait(self.driver, 5).until(
+        WebDriverWait(self.driver, 5).until(
             expected_conditions.presence_of_all_elements_located((By.XPATH, elementtext)))
 
     def CorrectPIN(self):

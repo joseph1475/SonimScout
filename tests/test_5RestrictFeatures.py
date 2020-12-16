@@ -1,25 +1,20 @@
 import pytest
 from utilities.BaseClass import BaseClass
 import time
+from appium import webdriver
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 
-
+'''line number 17, 50-60, '''
 
 class TestRestrictFeatures(BaseClass):
-    '''desired_capsContacts = {
-        "automationName": "UiAutomator2",  # Appium (default), or UiAutomator2
-        "platformName": "Android",  # Andriod,IOS
-        "platformVersion": "",  # can be open type or can declare the version .Eg: 8.1.1
-        "deviceName": "903890ef",  # Android Emulator or 903e900a device ID
-        "appPackage": "com.android.contacts",
-        "appActivity": "com.android.contacts.activities.PeopleActivity"
-    }'''
 
     def test_pincode(self):
-        self.verifyElementPresence("//*[@text='SafeGuard']")
+        '''
+        explicit wait -- not working
+        self.verifyElementPresence("//*[@text='SafeGuard']") '''
         self.driver1.find_element_by_xpath("//android.widget.TextView[@text='SafeGuard']").click()
         self.driver1.find_element_by_class_name("android.widget.Switch").click()
         self.driver1.find_element_by_class_name("android.widget.EditText").send_keys(1234)
@@ -50,12 +45,14 @@ class TestRestrictFeatures(BaseClass):
         # adjust here to your needs !
         #for x in range(0, 4):
             #wait.until(expected_conditions.presence_of_all_elements_located((By.ID, "com.sonim.safeguard:id/app_name")))
-        '''SonimRestricteFeatureList = len(self.driver1.find_elements_by_id("com.sonim.safeguard:id/app_name"))
+        '''
+        no of checked apps -- not working
+        SonimRestricteFeatureList = len(self.driver1.find_elements_by_id("com.sonim.safeguard:id/app_name"))
         checkbox = len(self.driver1.find_element_by_android_uiautomator("new UiSelector().checked(true)"))
             #count = count + SonimRestricteFeatureList
         for i in range(SonimRestricteFeatureList):
-            checkbox =len( self.driver1.find_element_by_android_uiautomator("new UiSelector().checked(true)"))
-            #if checkbox == "false":
+            checkbox = self.driver1.find_element_by_android_uiautomator("new UiSelector().checked(true)")
+            #if checkbox == "true":
             count = count + 1
             time.sleep(1)
         print(count)
@@ -96,7 +93,7 @@ class TestRestrictFeatures(BaseClass):
             #count = count + SonimRestricteFeatureList
         for i in range(SonimRestricteFeatureList):
             checkbox = self.driver1.find_element_by_android_uiautomator("new UiSelector().checked(true)")
-            if checkbox == "false":
+            if checkbox == "true":
                 count2 = count2 + 1
                 time.sleep(1)
         print(count2)
@@ -104,7 +101,26 @@ class TestRestrictFeatures(BaseClass):
         self.driver1.press_keycode(4) '''
 
     def test_saveoption(self):
-        self.driver1.find_element_by_xpath("//*[@text='Modify Contacts']").click()
+        self.driver1.find_element_by_android_uiautomator("new UiSelector().textContains(\"Restore Factory Settings\")").click()
+        #self.driver1.find_element_by_xpath("//android.widget.TextView[@text='Restore Factory Settings]").click()
         self.driver1.find_element_by_xpath("//*[@text='SAVE']").click()
-        '''Contactsdriver = self.webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capsContacts)
-        Contactsdriver.find_element_by_id("com.sonim.safeguard:id/editText").send_keys(1234)'''
+        desired_capsSettings = {
+                "automationName": "UiAutomator2",  # Appium (default), or UiAutomator2
+                "platformName": "Android",  # Andriod,IOS
+                "platformVersion": "",  # can be open type or can declare the version .Eg: 8.1.1
+                "deviceName": "903890ef",  # Android Emulator or 903e900a device ID
+                "appPackage": "com.android.settings",
+                "appActivity": "com.android.settings.Settings"
+            }
+        Settingsdriver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capsSettings)
+        Settingsdriver.find_element_by_android_uiautomator(
+            "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"" + "System" + "\").instance(0))");
+        time.sleep(5)
+        Settingsdriver.find_element_by_xpath("//*[@text='System']").click()
+        Settingsdriver.find_element_by_xpath("//*[@text='Advanced']").click()
+        Settingsdriver.find_element_by_xpath("//*[@text='Reset options']").click()
+        Settingsdriver.find_element_by_xpath("//*[@text='Erase all data (factory reset)']").click()
+        enterpin =Settingsdriver.find_element_by_xpath("//*[@text='Enter PIN']").text
+        assert enterpin == "Enter PIN"
+        Settingsdriver.find_element_by_id("com.sonim.safeguard:id/editText").send_keys(1234)
+        Settingsdriver.find_element_by_xpath("//*[@text='OK']").click()
