@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 
 '''line number 17, 50-60, '''
 
+
 class TestRestrictFeatures(BaseClass):
 
     def test_pincode(self):
