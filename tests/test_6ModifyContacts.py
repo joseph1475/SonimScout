@@ -4,14 +4,11 @@ from appium import webdriver
 from utilities.BaseClass import BaseClass
 '''some contacts should be present in the device'''
 
-class TestRestrictFeatures(BaseClass):
+
+class TestRestrictContacts(BaseClass):
 
     def test_addcontact(self):
         self.driver1.find_element_by_xpath("//android.widget.TextView[@text='SafeGuard']").click()
-        self.driver1.find_element_by_class_name("android.widget.Switch").click()
-        self.driver1.find_element_by_class_name("android.widget.EditText").send_keys(1234)
-        time.sleep(5)
-        self.driver1.find_element_by_id("android:id/button1").click()
         self.driver1.find_element_by_xpath("//*[@text='Features']").click()
         self.driver1.find_element_by_class_name("android.widget.EditText").send_keys(1234)
         self.driver1.find_element_by_id("android:id/button1").click()
@@ -41,8 +38,6 @@ class TestRestrictFeatures(BaseClass):
             assert enterpin == "Enter PIN"'''
         title = Contactsdriver.find_element_by_id("android:id/action_bar_title").text
         assert title == "SafeGuard"
-        #enterpin = Contactsdriver.find_element_by_xpath("//*[@text='Enter PIN']").text
-        #assert enterpin == "Enter PIN"
         Contactsdriver.press_keycode(4)
 
     def test_editcontact(self):
@@ -59,8 +54,6 @@ class TestRestrictFeatures(BaseClass):
         Contactsdriver.find_element_by_xpath("//android.widget.TextView[contains(@index, '1')]").click()
         time.sleep(2)
         title = Contactsdriver.find_element_by_id("android:id/action_bar_title").text
-        #title = Contactsdriver.find_element_by_xpath("//android.widget.TextView[contains(@index, '0')]").text
-        #enterpin = Contactsdriver.find_element_by_xpath("//*[@text='Enter PIN']").text
         assert title == "SafeGuard"
         Contactsdriver.press_keycode(4)
 
